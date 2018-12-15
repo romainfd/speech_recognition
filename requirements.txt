@@ -1,3 +1,6 @@
 SpeechRecognition
 gensim
 numpy
+gTTS
+snowboy
+PyAudio==0.2.9
