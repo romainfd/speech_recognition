@@ -1,13 +1,17 @@
-import logging
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+from levenshtein import distance
+from speech import listen_to_input
 
-from gensim import corpora, models, similarities
-corpus = [[(0, 1.0), (1, 1.0), (2, 1.0)],
-          [(2, 1.0), (3, 1.0), (4, 1.0), (5, 1.0), (6, 1.0), (8, 1.0)],
-          [(1, 1.0), (3, 1.0), (4, 1.0), (7, 1.0)],
-          [(0, 1.0), (4, 2.0), (7, 1.0)],
-          [(3, 1.0), (5, 1.0), (6, 1.0)],
-          [(9, 1.0)],
-          [(9, 1.0), (10, 1.0)],
-          [(9, 1.0), (10, 1.0), (11, 1.0)],
-          [(8, 1.0), (10, 1.0), (11, 1.0)]]
+
+def act_on_input(input_str):
+    input_list = input_str.split()
+    cmd = input_list[0]
+    if distance(cmd, "appel") <= 2:
+        print("Bien reçu, j'appelle ".format("".join(input_list[1:])))
+    elif distance(cmd, "alert") <= 2:
+        print("Bien reçu, je mets une alerte ici sur ".format("".join(input_list[1:])))
+    elif distance(cmd, "info") <= 2:
+        print("Bien reçu, voilà les infos sur ".format("".join(input_list[1:])))
+
+
+if __name__ == "__main__":
+    listen_to_input(act_on_input)
