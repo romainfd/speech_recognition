@@ -1,14 +1,15 @@
-# speech_recognition
+# Speech Recognition system for a ski assistant
+The 'Maurice' ski assistant lets you talk with your friends and get information about the station (traffic, weather, waiting time, alerts, ...) without taking. your gloves off or having to get your phone out of your jacket. To do so, it uses a Speech Recognition and Talker based on Google products to interact with all the apps functionalities.
 
-To install the dependencies:
+## To install the dependencies:
 * run `make dep` on the root of the project
 * if you have an error with PyAudio dep missing, follow the guide [here](https://pypi.org/project/SpeechRecognition/#pyaudio-for-microphone-users)
 
-To run the speech recognition:
+## To run the speech recognition:
 * run `python divers/speech.py`
 * it will record for 2 seconds
 
-To run the complete solution:
+## To run the complete interface (speech recognition, actions and answers said back):
 * run `make`
 * Set your volume to be sure to hear the answers
 * Make sure your microphone is connected
