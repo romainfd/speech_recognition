@@ -1,6 +1,7 @@
 from levenshtein import distance
 from talk import talk
-from listen import listen
+from listen import *
+import signal
 import numpy as np
 import os
 import speech_recognition as sr
@@ -57,7 +58,7 @@ def route_handler(input_list):
         guide_cmds = [{
             "name": "sommet",
             "action": lambda: "Bien reçu, pour rejoindre le sommet le plus rapidement possibme: "
-                              "prendre la piste bleue 'Promenade' puis prendre avec le télésiège"
+                              "descendre la piste bleue 'Promenade' puis prendre le télésiège"
         }, {
             "name": "station",
             "action": lambda: "Bien reçu, pour rejoindre la station le plus rapidement possible: "

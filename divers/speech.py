@@ -1,11 +1,12 @@
 import speech_recognition as sr
 from talk import talk
 
-# Record Audio
-r = sr.Recognizer()
 
 
 def listen_to_input(callback=None, duration=2):
+    # Record Audio
+    r = sr.Recognizer()
+
     """ Launches the microphone to listen for duration seconds and then call callback(input_sentence) """
     with sr.Microphone() as source:
         # talk("Nous calibrons notre micro avec le son ambiant. Patientez 1 seconde.")

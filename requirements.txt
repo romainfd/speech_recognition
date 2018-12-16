@@ -9,3 +9,4 @@ py_translator==1.8.9
 twilio
 slackclient
 fbchat
+sounddevice
