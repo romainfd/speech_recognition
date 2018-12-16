@@ -1,5 +1,6 @@
 # Speech Recognition system for a ski assistant
-The 'Maurice' ski assistant lets you talk with your friends and get information about the station (traffic, weather, waiting time, alerts, ...) without taking. your gloves off or having to get your phone out of your jacket. To do so, it uses a Speech Recognition and Talker based on Google products to interact with all the apps functionalities.
+The 'Maurice' ski assistant lets you talk with your friends and get information about the station (traffic, weather, waiting time, alerts, ...) without taking. your gloves off or having to get your phone out of your jacket. To do so, it uses a Speech Recognition and Talker based on Google products to interact with all the apps functionalities.<br/>
+This project was developed during the [Startup Weekend](https://startupweekend.org) about sport held in Palaiseau between December 14 and 16.
 
 ## To install the dependencies:
 * run `make dep` on the root of the project
