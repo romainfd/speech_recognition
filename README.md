@@ -10,6 +10,8 @@ To run the speech recognition:
 
 To run the complete solution:
 * run `make`
+* Set your volume to be sure to hear the answers
+* Make sure your microphone is connected
 * You can use "Ctrl + C" or say "Jarvis" to launch the voice recognition system
 * Here are the different functionalities:
     * Say `rejoindre Potos du ski` to join the group "Potos du ski"
