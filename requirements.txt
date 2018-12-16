@@ -4,3 +4,8 @@ numpy
 gTTS
 snowboy
 PyAudio==0.2.9
+requests
+py_translator==1.8.9
+twilio
+slackclient
+fbchat

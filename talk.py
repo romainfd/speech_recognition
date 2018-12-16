@@ -12,7 +12,7 @@ import os
 # my_text = 'Bienvenue Romain!'
 
 gtts.tokenizer.symbols.SUB_PAIRS.extend([
-    ('mes', 'tes'),
+    ('mes', 'té'),
     ('mon', 'ton'),
     ('ma', 'ta')
 ])
